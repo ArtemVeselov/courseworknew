@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "open-sans-b";
-  src: url(../fonts/OpenSans-Bold.off2);
+  src: url(../fonts/OpenSans-Bold.woff2);
 }
 body {
   margin: 0;
@@ -170,6 +170,7 @@ a {
   cursor: pointer;
 }
 
+/*шапка*/
 .header {
   background-color: #666;
   height: 450px;
@@ -193,7 +194,6 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
   max-width: 1660px;
 }
-
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -247,12 +247,12 @@ a {
   margin-top: 80px;
   font-size: 2.8rem;
 }
-
+/* trend */
 .now-trend {
   display: flex;
   width: 100%;
   max-width: 1660px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
 }
 
 .now-trend-title {
@@ -341,89 +341,16 @@ a {
   position: relative;
   margin: 0 auto;
 }
-.search-group {
-  width: calc(100% - 47px);
-}
+
 .page {
   margin-top: 60px;
 }
 
 .page-wrapper {
-  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
   display: flex;
   max-width: 1200px;
-  justify-content: space-between;
-}
-
-/*ТРЕНДЫ*/
-.trends {
-  width: 100%;
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-}
-figure {
-  margin: 0;
-}
-.trend {
-  height: 320px;
-  background-color: #00f000;
-  position: relative;
-  z-index: 0;
-  width: 24.8%;
-}
-
-.trend:nth-child(n + 1):nth-child(-n + 3) {
-  margin-right: 3px;
-}
-
-.trend::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  opacity: 0.6;
-  z-index: -1;
-}
-
-.trend-teg {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 15px;
-  display: flex;
-}
-
-.trend-teg-item {
-  margin-right: 20px;
-}
-
-.trend-teg-link {
-  text-decoration: none;
-  font-family: open-sans-b, sans-serif;
-  text-transform: uppercase;
-  color: #b59f5b;
-  font-size: 14px;
-}
-
-.trend-link {
-  font-family: open-sans-b, sans-serif;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 1.2;
-  margin-bottom: 37px;
-}
-
-.trend-text {
-  width: 90%;
-  border: 3px solid #b59f5b;
-  padding: 36px 32px;
-  align-items: flex-end;
 }
 
 /*ГЛАВНАЯ*/
@@ -585,7 +512,9 @@ figure {
   display: flex;
   width: 100%;
 }
-
+.search-group {
+  width: calc(100% - 47px);
+}
 .hidden {
   width: 1px;
   height: 1px;
@@ -1021,34 +950,26 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 767px;
-    /* position: relative;*/
   }
   .header-top {
     display: flex;
     justify-content: center;
-    /* width: 100%; */
-    /* margin: 0 auto; */
-    /* position: relative; */
-    /* text-align: center; */
-    /* z-index: 1; */
-    /* max-width: 1200px;*/
   }
   .noemi-logo {
     margin-top: 235px;
     margin-left: auto;
     margin-right: auto;
-    /* height: 50px; */
+
     width: 270px;
   }
   .burger-menu {
     width: 25px;
-    /* height: 100%; */
+
     display: flex;
     flex-direction: column;
     align-content: space-between;
     gap: 5px;
     margin: 0 0 185px 0;
-    /* justify-content: center; */
     position: absolute;
     right: 35px;
     top: 35px;
@@ -1082,22 +1003,22 @@ footer {
     flex-direction: column;
     gap: 5px;
   }
-  /* .page {
-    margin-top: 60px;
-    padding: 0 15px;
-  } */
   .page-wrapper {
     max-width: 767px;
     flex-direction: column;
     margin-top: 60px;
     padding: 0 15px;
   }
-
+  .main {
+    width: 100%;
+    flex-direction: column;
+  }
   .news-img {
     margin-bottom: 10px;
+    width: 100%;
   }
   .news {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .news-teg {
     margin: 0;

@@ -173,7 +173,7 @@ a {
 .header {
   background-color: #666;
   height: 450px;
-  background-image: url(/img/desk/banner-bg.jpg);
+  background-image: url(../img/desk/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -283,7 +283,7 @@ a {
 .card-trend-wrapper {
   background-color: #eff6f1;
   height: 320px;
-  background-image: url(/img/trend1.jpg);
+  background-image: url(../img/trend1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -304,13 +304,13 @@ a {
   z-index: 1;
 }
 .card-trend-wrapper-two {
-  background-image: url(/img/trend2.jpg);
+  background-image: url(../img/trend2.jpg);
 }
 .card-trend-wrapper-three {
-  background-image: url(/img/trend3.jpg);
+  background-image: url(../img/trend3.jpg);
 }
 .card-trend-wrapper-four {
-  background-image: url(/img/trend4.jpg);
+  background-image: url(../img/trend4.jpg);
 }
 .now-trend-teg {
   margin-top: 39px;
@@ -596,7 +596,7 @@ figure {
 .search-button {
   border: none;
   width: 47px;
-  background-image: url(/svg/search.svg);
+  background-image: url(../svg/search.svg);
   background-repeat: no-repeat;
   background-size: 16px;
   background-position: center;
@@ -817,15 +817,15 @@ figure {
 }
 
 .social-network-dribbble {
-  background-image: url(/svg/001-dribbble.svg);
+  background-image: url(../svg/001-dribbble.svg);
 }
 
 .social-network-pinterest {
-  background-image: url(/svg/001-pinterest.svg);
+  background-image: url(../svg/001-pinterest.svg);
 }
 
 .social-network-tumblr {
-  background-image: url(/svg/003-tumblr.svg);
+  background-image: url(../svg/003-tumblr.svg);
 }
 
 .visually-hidden {
@@ -860,7 +860,7 @@ footer {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .header {
-    background-image: url(/img/tablet/banner-bg-tablet.jpg);
+    background-image: url(../img/tablet/banner-bg-tablet.jpg);
     background-color: #666;
     height: 613px;
     background-repeat: no-repeat;
@@ -1015,7 +1015,7 @@ footer {
     font-size: 1.63rem;
   }
   .header {
-    background-image: url(/img/mobile/banner-mobile.jpg);
+    background-image: url(../img/mobile/banner-mobile.jpg);
     min-height: 640px;
     background-position: center;
     background-repeat: no-repeat;

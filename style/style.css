@@ -8,6 +8,15 @@
   src: url(../fonts/OpenSans-Bold.woff2);
 }
 
+/* проверка горизонтального скролла
+*,
+*::before,
+*::after {
+  outline: 1px solid red !important;
+  outline-offset: -1px !important;
+} */
+
+html,
 body {
   margin: 0;
   font-family: open-sans-r, sans-serif;
@@ -212,7 +221,7 @@ a {
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.6);
   max-width: 1660px;
 }
@@ -494,6 +503,8 @@ a {
   flex-shrink: 0;
 }
 
+
+
 .top {
   text-align: center;
   margin-bottom: 0px;
@@ -561,10 +572,14 @@ a {
 }
 
 .hidden {
+  position: absolute;
   width: 1px;
   height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .search-button {
@@ -1132,6 +1147,7 @@ footer {
 
   .news-description {
     display: flex;
+    flex-direction: column;
   }
 
   .news-text {}
@@ -1159,7 +1175,6 @@ footer {
     font-size: 14px;
     width: 100%;
     margin-top: 25px;
-    padding: 0 15px;
   }
 
   .shop-container {
